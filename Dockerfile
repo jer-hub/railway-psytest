@@ -15,8 +15,5 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . .
 
-# collect static files
-RUN python manage.py collectstatic --noinput
-
 # run gunicorn
 CMD gunicorn psytests.wsgi:application --bind 0.0.0.0:$PORT
