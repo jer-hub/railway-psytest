@@ -1,7 +1,8 @@
 from .common import *
 import dj_database_url
 
-DEBUG = False
+# DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
 ALLOWED_HOSTS = ["*"]
 
 SECRET_KEY = os.environ["SECRET_KEY"]
