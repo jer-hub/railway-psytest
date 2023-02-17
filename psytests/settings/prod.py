@@ -1,4 +1,3 @@
-from psytests.settings.dev import DATABASES
 from .common import *
 import dj_database_url
 
