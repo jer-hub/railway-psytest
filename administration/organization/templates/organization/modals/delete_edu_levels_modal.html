@@ -1,0 +1,14 @@
+<div class="modal fade" id="edu_levels_delete_modal" aria-labelledby="edu_levels_delete_modal-label" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Are you sure do you want to delete?</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button id="delete_edu_levels_btn" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+          <activate hx-trigger="edu_level_options from:body" hx-get="{% url 'administration:edu-level-options' %}" hx-target="#edu_levels_select"/>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
