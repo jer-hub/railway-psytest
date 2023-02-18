@@ -45,6 +45,9 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
     "psytests.auth.EmailBackend",
 )
+
+SITE_ID=1
+
 SOCIALACCOUNT_PROVIDERS = {
     "google": {
         "SCOPE": [
